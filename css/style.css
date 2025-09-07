@@ -111,6 +111,7 @@ main {
 }
 
 .main__container a {
+    transition: all 0.4s ease;
     background: rgb(1, 120, 214);
     border-radius: 15px;
     padding: 20px 30px;
@@ -135,6 +136,29 @@ main {
     width: 310px;
     position: absolute;
     right: 0;
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .message1 {
@@ -175,6 +199,7 @@ main {
 
 .header__logo {
     display: flex;
+    z-index: 12314;
     align-items: center;
     column-gap: 10px;
 }
@@ -214,6 +239,7 @@ main {
     color: white;
     border-radius: 20px;
     text-decoration: none;
+    transition: all 0.4s ease;
     column-gap: 20px;
 }
 
@@ -280,6 +306,31 @@ main {
     width: 60px;
 }
 
+.header__btn a:hover {
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.main__container a:hover {
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.header__btn a:hover {
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.info__container--button a:hover {
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.footer__item--question:hover {
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+    transform: scale(1.05);
+}
+
 .skills__item--text {
     font-weight: 400;
     font-size: 20px;
@@ -312,6 +363,15 @@ main {
 
 }
 
+.functions__container--image1:hover{
+    transform: scale(1.05) rotate(2deg);
+}
+
+.functions__container--image2:hover{
+    transform: scale(1.05) rotate(-2deg);
+}
+
+
 .functions__container {
     display: flex;
     flex-direction: row;
@@ -321,6 +381,7 @@ main {
 }
 
 .functions__container img {
+    transition: all 0.4s ease;
     width: 355px;
     height: 379px;
 }
@@ -407,6 +468,54 @@ main {
     background: rgba(243, 249, 255, 1);
 }
 
+.about__indicator:hover {
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-8px);
+    }
+
+    60% {
+        transform: translateY(4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.about__item:hover {
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-8px);
+    }
+
+    60% {
+        transform: translateY(4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* .functions__image--right:hover {
+    transform: translateX(10px) scale(1.05);
+} */
+
 .about__item--fon {
     position: absolute;
     right: 0px;
@@ -478,6 +587,7 @@ main {
     background: rgba(1, 120, 214, 1);
     border-radius: 15px;
     padding: 20px 30px;
+    transition: all 0.4s ease;
     font-weight: 600;
     color: white;
     text-decoration: none;
@@ -554,6 +664,7 @@ main {
     color: white;
     border-radius: 20px;
     text-decoration: none;
+    transition: all 0.4s ease;
 }
 
 .footer__item--question img {
@@ -658,26 +769,38 @@ main {
         /* бургер выше меню */
     }
 
-    /* меню */
+    /* меню по умолчанию спрятано */
     .header__menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        /* фиксируем поверх всего */
+        top: 0;
         left: 0;
-        right: 0;
+        width: 100%;
+        height: 100vh;
+        /* на всю высоту экрана */
         background: #fff;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-        border-radius: 0 0 20px 20px;
-        padding: 15px;
-        row-gap: 15px;
+        padding: 80px 20px 20px;
+        /* сверху оставим место под шапку */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+
+        transition: all 0.4s ease;
         z-index: 2000;
-        /* меню поверх всего */
     }
 
+    /* когда бургер открыт */
     .header.open .header__menu {
-        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
     }
+
 
     .header__menu .header__links a {
         display: block;
@@ -691,6 +814,7 @@ main {
     }
 
     .header__menu .header__btn a {
+        
         width: 100%;
         justify-content: center;
     }
