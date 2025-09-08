@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLBOT</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>FLBot - Умный бот для поиска заказов на фрилансе | Kwork, FL.ru</title>
+    <meta name="title" content="FLBot - Умный бот для поиска заказов на фрилансе | Kwork, FL.ru">
+    <meta name="description" content="FLBot автоматически находит подходящие заказы на Kwork и FL.ru. AI-отклики, тонкие фильтры, мгновенные уведомления. Попробуйте бесплатно!">
+    <meta name="keywords" content="фриланс бот, поиск заказов, kwork бот, fl.ru бот, автоматические отклики, фриланс автоматизация">
+    <meta name="author" content="FLBot.pro">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Russian">
+    
+    <!-- Open Graph для Telegram, VK, WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://flbot.pro/">
+    <meta property="og:title" content="FLBot - Умный бот для поиска заказов на фрилансе">
+    <meta property="og:description" content="FLBot автоматически находит подходящие заказы на Kwork и FL.ru. AI-отклики, тонкие фильтры, мгновенные уведомления. Попробуйте бесплатно!">
+    <meta property="og:image" content="https://flbot.pro/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="FLBot.pro">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://flbot.pro/favicon.ico?v=3" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://flbot.pro/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://flbot.pro/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://flbot.pro/apple-touch-icon.png">
+    <link rel="manifest" href="https://flbot.pro/site.webmanifest">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="preload" href="./images/logo.png" as="image">
+    <link rel="preload" href="./images/mainphone.png" as="image">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//t.me">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://flbot.pro/">
+    
+    <!-- Styles -->
     <link href="./css/style.css" rel="stylesheet">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "FLBot",
+      "alternateName": "FLBot.pro",
+      "description": "Умный Telegram-бот для автоматического поиска заказов на фриланс-биржах Kwork и FL.ru с AI-откликами и тонкими фильтрами",
+      "url": "https://flbot.pro",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Telegram",
+      "softwareVersion": "2.0",
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-09-09",
+      "author": {
+        "@type": "Organization",
+        "name": "FLBot.pro"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "description": "Бесплатная версия с базовым функционалом"
+      },
+      "featureList": [
+        "Мгновенный поиск заказов с Kwork, FL.ru",
+        "Тонкие фильтры и подбор под навыки",
+        "Автоответы с помощью AI",
+        "Бесплатный сканер заказов"
+      ],
+      "screenshot": "https://flbot.pro/images/mainphone.png",
+      "downloadUrl": "https://t.me/flpro_bot",
+      "supportUrl": "https://t.me/eantdz",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -14,7 +97,7 @@
         <section class="main">
             <div class="header animate" data-animate="top">
                 <div class="header__logo">
-                    <img src="./images/logo.png">
+                    <img src="./images/logo.png" alt="FLBot логотип">
                     <a href="#">FLBot.pro</a>
                 </div>
 
@@ -26,7 +109,8 @@
                 </div>
 
                 <div class="header__btn">
-                    <a href="https://t.me/eantdz" target="_blank" class="header__btn--question">Задать вопрос <img src="./images/question.png"></a>
+                    <a href="https://t.me/eantdz" target="_blank" rel="noopener noreferrer" class="header__btn--question">Задать вопрос <img
+                            src="./images/question.png" alt="Иконка вопроса"></a>
                 </div>
 
                 <!-- бургер -->
@@ -44,7 +128,8 @@
                         <a href="#info">Как это работает</a>
                     </div>
                     <div class="header__btn mobile">
-                        <a href="https://t.me/eantdz" target="_blank" class="header__btn--question">Задать вопрос <img src="./images/question.png"></a>
+                        <a href="https://t.me/eantdz" target="_blank" rel="noopener noreferrer" class="header__btn--question">Задать вопрос <img
+                                src="./images/question.png" alt="Иконка вопроса"></a>
                     </div>
                 </div>
             </div>
@@ -54,15 +139,15 @@
                 <h1>FLBot — бот, который<br> находит заказы <span>вместо вас</span></h1>
                 <p>Экономьте время и берите только те заказы, которые вам подходят</p>
                 <div>
-                    <a href="https://t.me/flpro_bot" target="_blank">Попробовать бесплатно</a>
+                    <a href="https://t.me/flpro_bot" target="_blank" rel="noopener noreferrer">Попробовать бесплатно</a>
                 </div>
             </div>
             <div class="main__image">
-                <img class="main__image--phone animate" data-animate="right" src="./images/mainphone.png">
-                <img class="main__image--message message1 animate" data-animate="top" src="./images/message1.png">
-                <img class="main__image--message message2 animate" data-animate="left" src="./images/message2.png">
-                <img class="main__image--message message3 animate" data-animate="bottom" src="./images/message3.png">
-                <img class="main__image--message message4 animate" data-animate="top" src="./images/message4.png">
+                <img class="main__image--phone animate" data-animate="right" src="./images/mainphone.png" alt="Интерфейс FLBot в телефоне">
+                <img class="main__image--message message1 animate" data-animate="top" src="./images/message1.png" alt="Уведомление о новом заказе">
+                <img class="main__image--message message2 animate" data-animate="left" src="./images/message2.png" alt="Фильтры заказов">
+                <img class="main__image--message message3 animate" data-animate="bottom" src="./images/message3.png" alt="AI-отклик на заказ">
+                <img class="main__image--message message4 animate" data-animate="top" src="./images/message4.png" alt="Статистика заказов">
             </div>
         </section>
 
@@ -70,27 +155,27 @@
             <h2>Что умеет бот</h2>
             <div class="skills__container">
                 <div class="skills__item">
-                    <img src="./images/skills1.png">
+                    <img src="./images/skills1.png" alt="Поиск заказов">
                     <div class="skills__item--text">
                         Мгновенный поиск заказов
                         с Kwork, FL.ru
                     </div>
                 </div>
                 <div class="skills__item">
-                    <img src="./images/skills2.png">
+                    <img src="./images/skills2.png" alt="Фильтры заказов">
                     <div class="skills__item--text">
                         Тонкие фильтры и подбор
                         под ваши навыки
                     </div>
                 </div>
                 <div class="skills__item">
-                    <img src="./images/skills3.png">
+                    <img src="./images/skills3.png" alt="AI отклики">
                     <div class="skills__item--text">
                         Автоответы с помощью AI — готовые отклики в 1 клик
                     </div>
                 </div>
                 <div class="skills__item">
-                    <img src="./images/skills4.png">
+                    <img src="./images/skills4.png" alt="Сканер заказов">
                     <div class="skills__item--text">
                         Бесплатный сканер заказов
                     </div>
@@ -103,11 +188,11 @@
                 Продвинутые функции
             </h2>
             <div class="functions__container">
-                <img class="functions__container--image1" src="./images/functions2.png">
-                <img class="functions__container--image2" src="./images/functions1.png">
+                <img class="functions__container--image1" src="./images/functions2.png" alt="Продвинутые настройки FLBot">
+                <img class="functions__container--image2" src="./images/functions1.png" alt="Аналитика и статистика">
             </div>
-            <img class="functions__image--left" src="./images/functionsleft.png">
-            <img class="functions__image--right" src="./images/functionsright.png">
+            <img class="functions__image--left" src="./images/functionsleft.png" alt="Декоративный элемент">
+            <img class="functions__image--right" src="./images/functionsright.png" alt="Декоративный элемент">
         </section>
 
         <section id="info" class="about animate" data-animate="top">
@@ -115,40 +200,40 @@
             <div class="about__main">
                 <div class="about__indicators">
                     <div class="about__indicator">
-                        <img class="about__indicator--image" src="./images/about1.png">
+                        <img class="about__indicator--image" src="./images/about1.png" alt="Шаг 1">
                     </div>
                     <div class="about__indicator">
-                        <img class="about__indicator--image" src="./images/about2.png">
+                        <img class="about__indicator--image" src="./images/about2.png" alt="Шаг 2">
                     </div>
                     <div class="about__indicator">
-                        <img class="about__indicator--image" src="./images/about3.png">
+                        <img class="about__indicator--image" src="./images/about3.png" alt="Шаг 3">
                     </div>
                 </div>
                 <div class="about__container">
                     <div class="about__item">
                         <p>Подключаете бота
                             в Telegram</p>
-                        <img class="about__item--fon" src="./images/about10.png">
-                        <img class="about__item--image  about__item--telegram" src="./images/about4.png">
+                        <img class="about__item--fon" src="./images/about10.png" alt="Фон">
+                        <img class="about__item--image  about__item--telegram" src="./images/about4.png" alt="Подключение в Telegram">
                     </div>
                     <div class="about__item">
                         <p>Настраиваете биржи
                             и категории заказов</p>
-                        <img class="about__item--fon" src="./images/about10.png">
-                        <img class="about__item--image" src="./images/about5.png">
+                        <img class="about__item--fon" src="./images/about10.png" alt="Фон">
+                        <img class="about__item--image" src="./images/about5.png" alt="Настройка фильтров">
                     </div>
                     <div class="about__item">
                         <p>Получаете подходящие заказы и отклики</p>
-                        <img class="about__item--fon" src="./images/about10.png">
-                        <img class="about__item--image" src="./images/about6.png">
+                        <img class="about__item--fon" src="./images/about10.png" alt="Фон">
+                        <img class="about__item--image" src="./images/about6.png" alt="Получение заказов">
                     </div>
                 </div>
             </div>
-            <img class="about__image" src="./images/about11.png">
-            <img class="about__image--line" src="./images/about12.png">
+            <img class="about__image" src="./images/about11.png" alt="Декоративные элементы">
+            <img class="about__image--line" src="./images/about12.png" alt="Соединительная линия">
         </section>
 
-        <section  class="info animate" data-animate="top">
+        <section class="info animate" data-animate="top">
             <div class="info__container">
                 <h2>
                     Перестаньте тратить время на поиск заказов — <span>доверьте это FLBot</span>
@@ -156,10 +241,10 @@
                 <div class="info__container--description">FLBot не хранит личные данные и полностью работает внутри
                     Telegram</div>
                 <div class="info__container--button">
-                    <a href="https://t.me/flpro_bot" target="_blank">Попробовать бесплатно</a>
+                    <a href="https://t.me/flpro_bot" target="_blank" rel="noopener noreferrer">Попробовать бесплатно</a>
                 </div>
             </div>
-            <img src="./images/info.png">
+            <img src="./images/info.png" alt="FLBot интерфейс">
 
         </section>
     </main>
@@ -167,30 +252,31 @@
         <div class="footer__container">
             <div class="footer__item">
                 <div class="footer__logo">
-                    <img class="footer__logo--image" src="./images/logo.png">
+                    <img class="footer__logo--image" src="./images/logo.png" alt="FLBot логотип">
                     <a href="#" class="footer__logo--text">FLBot.pro</a>
                 </div>
                 <p>© FLBot.pro, 2025</p>
             </div>
             <div class="footer__item">
-                <a href="#" class="footer__item--link">Что умеет бот</a>
-                <a href="#" class="footer__item--link">Продвинутые функции</a>
+                <a href="#skills" class="footer__item--link">Что умеет бот</a>
+                <a href="#functions" class="footer__item--link">Продвинутые функции</a>
             </div>
             <div class="footer__item">
-                <a href="#" class="footer__item--link">Как это работает</a>
-                <a href="#" class="footer__item--link">Политика конфиденциальности</a>
+                <a href="#info" class="footer__item--link">Как это работает</a>
+                <a href="https://flbot.pro/privacy" class="footer__item--link">Политика конфиденциальности</a>
             </div>
             <div class="footer__item">
-                <a href="#" class="footer__item--link">Публичная оферта</a>
+                <a href="https://flbot.pro/terms" class="footer__item--link">Публичная оферта</a>
             </div>
             <div class="footer__item">
-                <a href="https://t.me/eantdz" target="_blank" class="footer__item--question">Задать вопрос <img src="./images/question.png"></a>
+                <a href="https://t.me/eantdz" target="_blank" rel="noopener noreferrer" class="footer__item--question">Задать вопрос <img
+                        src="./images/question.png" alt="Иконка вопроса"></a>
             </div>
         </div>
     </footer>
 
 </body>
 
-</html>
-
 <script src="./js/script.js"></script>
+
+</html>
